@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -249,10 +248,8 @@
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
             // Exibe o resultado no elemento com id "countdown"
             document.getElementById("countdown").innerHTML = "Faltam " + days + " dias, " + hours + " horas, " + minutes + " minutos e " + seconds + " segundos para o evento.";
-
             // Se a contagem regressiva terminar, exibe uma mensagem
             if (distance < 0) {
                 clearInterval(x);
