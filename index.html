@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -67,6 +68,17 @@
                 background-position: 0% 50%;
             }
         }
+
+        .jogo2:hover {
+            color: #ff00ff;
+            transform: scale(0.9);
+            transition: color 0.3s, transform 0.3s;
+            /* efeito gostosinho */
+        }
+        .lead-animation {
+            animation: pulse 1s infinite;
+        }
+
     </style>
 
 
@@ -138,13 +150,15 @@
                     <h2 class="featurette-heading fw-normal text-danger lh-1">Brincadeiras<span
                             class="text-muted"></span></h2>
                     <hr class="featurette-divider">
-                    <p class="lead jogo2"> <i class="bi bi-flag-fill m-1"> Pega Bandeira</i></p>
-                    <p class="lead jogos"><i class="bi bi-joystick m-1"></i>Sala de jogos</p>
+                    <p class="lead  jogo2"> <i class="bi bi-flag-fill m-1"> Pega Bandeira</i></p>
+                    <p class="lead jogo2"><i class="bi bi-joystick m-1"></i>Sala de jogos</p>
+                    <p class="lead jogo2"><i class="bi bi-egg m-1">Ovo choco</i></p>
                 </div>
                 <div class="col-md-5">
                     <img id="img-card"
                         class="bd-placeholder-img  border border-2   bd-placeholder-img-lg shadow featurette-image img-fluid mx-auto"
-                        src="imagens/adoravel-crianca-hispanica-brincando-com-bolas-sentadas-no-chao-no-jardim-de-infancia.jpg" alt="" height="40px" >
+                        src="imagens/adoravel-crianca-hispanica-brincando-com-bolas-sentadas-no-chao-no-jardim-de-infancia.jpg"
+                        alt="" height="40px">
                 </div>
             </div>
             <hr class="featurette-divider">
@@ -155,9 +169,8 @@
                             class="text-muted"></span>
                     </h2>
                     <hr class="featurette-divider">
-                    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of
-                        how this
-                        layout would work with some actual real-world content in place.</p>
+                    <p class="lead">
+                       Não sabemos nada ainda.......</p>
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img id="img-card" src="imagens/livros-de-leitura-de-grupo-de-criancas.jpg"
@@ -171,15 +184,37 @@
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal text-primary lh-1">Dicas sobre Higiene<span
+                    <h2 class="featurette-heading fw-normal text-primary lh-1">Atividades e cuidados<span
                             class="text-muted"></span>
                     </h2>
                     <hr class="featurette-divider">
-                    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not
-                        really
-                        intended to be actually read, simply here to give you a better view of what this would look like
-                        with some
-                        actual content. Your content.</p>
+                    <p class="lead ">
+                        (<i class="bi bi-person-heart text-primary">Higiene</i>)
+                        Lavar as mãos, será uma atividade que demonstrará para as crianças a maneira
+                        correta
+                        de se lavá-las:
+                    </p>
+                        <br>
+                        <p class="lead">
+                        (<i class="bi bi-person-heart text-primary">Higiene</i>)
+                        Escovar os dentes, será uma atividade que mostrará para as crianças o jeito correto
+                        para
+                        escovar os dentes:
+                       (
+                        </p>
+                        <hr>
+                        <p class="lead">                        <i class="bi bi-heart-pulse text-danger">Saúde</i>) Pirâmide alimentar, será uma atividade que
+                        mostrará para as crianças como terem uma
+                        alimentação mais saudável e qual é a prioridade dos alimentos em cada refeição:
+                    </p>
+                        <br>
+                        <p class="lead">
+                        (
+                        <i class="bi bi-arrow-repeat text-success">Meio ambiente</i>) Reciclagem, será uma atividade que
+                        demostrará para as
+                        crianças quais são as
+                        cores de cada lixeira e o seu lixo correspondente
+                    </p>
                 </div>
                 <div class="col-md-5">
                     <img id="img-card" src="imagens/close-up-mother-girl-bathroom.jpg"
@@ -194,7 +229,8 @@
 
         <div class="container text-center mt-5">
 
-            <h2 id="boyola" class="text-center m-1 border-bottom text-primary">Nosso <b class="text-success">Endereço</b></h2>
+            <h2 id="boyola" class="text-center m-1 border-bottom text-primary">Nosso <b
+                    class="text-success">Endereço</b></h2>
             <iframe class="mt-3 border rounded-3 shadow-lg" width="100%" height="600"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d675.5951434802913!2d-57.10740516052297!3d-29.781462612378082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945344d1f9be6f2d%3A0xdabf6f56f4d36fa7!2sIFFarroupilha%20Uruguaiana%20-%20Instituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20Farroupilha!5e0!3m2!1spt-BR!2sbr!4v1698405769769!5m2!1spt-BR!2sbr"
                 style="border:0;" allowfullscreen="" loading="lazy"
@@ -207,7 +243,7 @@
             <footer class="d-flex flex-wrap  justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4 d-flex align-items-center">
                     <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                   
+
                         <img src="imagens/iffar.png" height="40" alt="" srcset="">
                     </a>
                     <span class="mb-3 mb-md-0 text-body-secondary">&copy;2023 INFO-31</span>
@@ -229,7 +265,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
     <script>
         // Data do evento
         var eventDate = new Date("November 18, 2023 00:00:00").getTime();
